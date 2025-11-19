@@ -1,0 +1,7 @@
+{
+  "name": "Mia Maya Art",
+  "description": "A curated digital gallery of fine art and illustrations by Mia Maya, featuring an AI gallery assistant.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
