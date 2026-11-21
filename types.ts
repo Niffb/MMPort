@@ -1,23 +1,11 @@
+export type MediaItem =
+  | { type: 'image'; src: string }
+  | { type: 'video'; src: string; poster: string };
 
-export interface Artwork {
-  id: string;
+export interface Project {
+  slug: string;
   title: string;
-  description: string;
-  medium: string; // e.g., "Oil on Canvas", "Digital"
-  dimensions?: string;
-  year: string;
-  imageUrl: string;
-  curatorNote?: string;
-}
-
-export interface Skill {
-  name: string;
-  level: number; // 0-100
-  category: 'Technique' | 'Theory' | 'Medium';
-}
-
-export interface ChatMessage {
-  role: 'user' | 'model';
-  text: string;
-  isError?: boolean;
+  description: string; // TODO(Mia): replace placeholder text
+  media: MediaItem[];
+  links?: { label: string; href: string }[];
 }

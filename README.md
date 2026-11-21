@@ -1,20 +1,23 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Mia Maya — portfolio site
 
-# Run and deploy your AI Studio app
+React + Vite. Pages use hash routes: `#/` (home), `#/work`, `#/exhibitions`, `#/shop`, `#/contact`.
 
-This contains everything you need to run your app locally.
+## Run locally
 
-View your app in AI Studio: https://ai.studio/apps/drive/1zdnmvfnTGfk6JAaOHKY2kYFaSsjHYvR6
+```
+npm install
+npm run dev
+```
 
-## Run Locally
+## Where things live
 
-**Prerequisites:**  Node.js
+| What | Where |
+|---|---|
+| Home background image | `public/images/home-background.jpg` |
+| Artist introduction | `pages/Home.tsx` (About section) |
+| Work page projects (titles, descriptions, media order) | `projects.ts` |
+| Project images and videos | `public/work/<project>/` |
+| Exhibitions / Shop / Contact | `pages/Placeholder.tsx` stubs, wired up in `App.tsx` |
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Videos in `public/work` are 720p web copies. The full-quality originals are kept outside the repo
+(GitHub rejects files over 100 MB).
